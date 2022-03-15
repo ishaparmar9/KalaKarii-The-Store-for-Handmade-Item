@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="project.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        .hd{
+            
+            animation-name: hd-a;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in;
+        }
+        @keyframes hd-a{
+            0%{
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .row{
+            margin: auto;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .card{
+            width: 25%;
+            height: 500px;
+        }
+        .card:hover{
+            background-color: rgb(240, 207, 163);
+            padding: 0;
+        }
+        .card-img-top{
+            padding: 20px;
+            padding-top: 31px;
+        }
+        .buy{
+            color: white;
+            margin-top: 20px;
+            font-family: cursive;
+            font-size: 25px;
+        }
+        .buy a{
+            text-decoration: none;
+            color: cyan;
+        }
+        .buy a:hover{
+            color: pink;
+        }
+        .info{
+            color: grey;
+            padding: 50px;
+        }
+        .info:hover{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-lg-top">
+        <div class="container-fluid">
+          <div class="navbar-brand p-title" ><img src="./icons8-unity-64.png" alt=""><span class="t1">KalaKa</span><span class="t2">री</span></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="homepage.html">Home</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link active" href="products.html">Products</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="exclusives.html">Exclusives</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <h1 class="hd">Products Available Right Now...</h1>
+    <div class="container">
+        <div class="row">
+            <div class="card"   >
+                <img src="p1.jpg" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">HandMade Sabai Grass Planter Large <br><b>₹899</b> </p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p2.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">The Shahi Collection. Exclusive, Fine Kashmiri Art Papier-Mache Square Coaster Set - Butterflies <br><b>₹ 1,700</b></p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p3.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Fine, Soft Himachal Wool Stole With Woven Border <br><b>₹ 2,130</b> </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card"   >
+                <img src="p4.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Jewel Handknotted Macramé Table Runner - Beige <br><b>₹ 3,090 </b></p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p5.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Tambat Handbeaten Copper Matka - Medium Dia - 4.5".
+                    <br><b>₹ 1,350 </b></p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p6.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Exclusive Sterling Silver Filigree Collar Necklace - Gleaming Lotus
+                    <br><b>₹ 1543 </b></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card"   >
+                <img src="p7.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Pure Bees Wax Candles With Stand (Set Of 3)
+                    <br><b>₹ 1,070</b> </p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p8.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Jaipur Blue Pottery Decorative Plate In Wooden Box - Yellow Camel
+                    <br><b>₹ 2,080</b> </p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p9.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">The India Craft House Jaipur Blue Pottery Jar With Lid
+                    <br><b>₹ 1,730</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card"   >
+                <img src="p10.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Delhi Blue Art Pottery Curio - Buddha
+                    <br><b>₹ 1,970</b></p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p11.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Fine Crystal Glass Ganesha Diya (Large)
+                    <br><b>₹ 1,590</b></p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p12.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Coconut Craft Table Lamp
+                    <br><b>₹ 1,890</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card"   >
+                <img src="p13.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Handcrafted Shola Flowers - Soothing Roses (Bunch Of 15)
+                    <br><b>₹ 1,550</b></p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p14.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Carved Filigree Stone Round Tea Light Holder
+                    <br><b>₹ 1,990</b></p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p15.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Meenakari Art Curio - Horse, Large
+                    <br><b>₹ 1,290</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card"   >
+                <img src="p16.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Metal Filigree Tealight / Fairy Lights Holder (Set Of 2)
+                    <br><b>₹ 1,870</b></p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p17.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">Hand Knotted Macrame Round Sling Bag - Crimson
+                    <br><b>₹ 1,190</b></p>
+                </div>
+            </div>
+            <div class="card"   >
+                <img src="p18.webp" class="card-img-top" alt="  ">
+                <div class="card-body">
+                <p class="card-text">The India Craft House Wooden Jaali Tealight Covers - (Set Of 2)
+                    <br><b>₹ 1,240</b></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="buy">
+            <a href="contactus.html">contact us</a> to order items...
+        </div>
+
+
+    </div>
+    <div class="info">
+        <p>How to buy products
+            <li>Take a Screenshot of the product and send us through mail or whatsapp you can get respective details in <b>'Contact Us'</b> section</li>
+            <li>Further communication would be carry on over there only</li>
+            <li>All India delivery available</li>
+        </p>
+    </div>
+
+     <!-- footer -->
+     <footer>
+        <div class="p-title t-f" ><img src="./icons8-unity-64.png" alt=""><span class="t1">KalaKa</span><span class="t2">री</span></div>
+
+        <div class="social-media">
+           <div> We are available on: </div>
+            <a href="#" target="blank"><img id="facebook" src="./icons8-facebook-30-ch.png" alt="Instagram"></a> &nbsp;
+            <a  href="#" target="blank"><img id="instagram" src="./icons8-instagram-30-ch.png" alt="Instagram"></a> &nbsp;
+            <a href="#" target="blank"><img id="whatsapp" src="./icons8-whatsapp-30-ch.png" alt="Whatsapp"></a> &nbsp;
+            <a href="#" target="blank"><img  id="youtube" src="./icons8-youtube-30-ch.png" alt="Youtube"></a> &nbsp;
+            <a href="#" target="blank"><img id="twitter" src="./icons8-twitter-30-ch.png" alt="Twitter"></a> 
+             <hr>
+            <p>
+                Copyright  © 2022 KALAKARII. All rights reserved.
+                <div id="design">
+                 Design: <a href="https://www.linkedin.com/in/isha-parmar-04318222b">Isha H. Parmar</a>
+                </div>
+            </p>
+        </div>
+        
+    </footer>
+    <!-- /footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh61eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
